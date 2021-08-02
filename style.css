@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@500&family=Parisienne&family=WindSong:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@1,500&display=swap');
 
 *{
     box-sizing: border-box;
@@ -6,22 +7,22 @@
     padding: 0;
 }
 body{
-    background-color:  rgb(219, 122, 231);
+    background-color:  rgba(202, 22, 101, 0.8)
     
 }
 
 .logo{
-    height: 150px;
-    width: 150px;
+    height: 170px;
+    width: 170px;
     background-color: white;
     cursor: pointer;
 }
 .logo:hover{
-    background-color: rgb(219, 122, 231);
+    background-color: rgba(202, 22, 101, 0.8);
     transition: all 0.5s ease 0s;
 }
 
-li, a, button{
+li, a{
     font-family: "Great Vibes", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -34,10 +35,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 10%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0,0,0);
+    height: 170px;
 }
 
-}
 .nav__links{
     list-style: none;
 }
@@ -51,14 +52,14 @@ header {
     font-size: 30px;
 }
 .nav__links li a:hover{
-    color:rgb(219, 122, 231);
+    color:rgba(202, 22, 101, 0.8)
 }
 .cta{
-    color:rgb(219, 122, 231);
+    color:rgba(202, 22, 101, 0.8);
+    font-size: 1.5em;
 }
 .cta:hover{
-    /* transition:  all 0.3 ease 0s; */
-    color:rgba(219, 122, 231,0.8);
+    color:rgba(202, 22, 101, 0.5)
 }
 
 .container{
@@ -66,13 +67,42 @@ display: flex;
 justify-content: space-around;
 width: 100%;
 height: 780px;
-
+align-items: center;
 
 /* background-image: url(./Images/flowers.jpeg); */
-background-color: rgb(231, 227, 227);
+background-color:rgba(202, 22, 101, 0.8)
 }
 .photo{
-    
+    height: 100%;
     /* margin: 2px 0px; */
-    /* border-radius: 50%; */
+    /* /* border-radius: 50%;  */    
+}
+p{
+    color:white;
+    font-family: "STIX Two Text", sans-serif;
+    margin: 10px;
+    font-size: 70px;
+    margin-left: 10px;
+}
+.slogan button{
+    font-family: "STIX Two Text",sans-serif;
+    font-size: 20px;
+    color:white;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 80px;
+    background-color: rgba(42, 42, 42, 1);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-align: center;
+}
+.slogan button:hover{
+    background-color: none;;
+    color:rgba(202, 22, 101, 0.9);
+    /* border-color:rgba(202, 22, 101, 0.8); */
+    background-color: rgba(42, 42, 42, 1);
+    
+
 }
