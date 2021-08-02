@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@500&family=Parisienne&family=WindSong:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:  rgb(219, 122, 231);
+}
+
+.logo{
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    cursor: pointer;
+}
+.logo:hover{
+    background-color: rgb(219, 122, 231);
+    transition: all 0.5s ease 0s;
+}
+
+li, a, button{
+    font-family: "Great Vibes", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: rgb(0, 0, 0);
+}
+header button{
+    padding: 9px 25px;
+    color:rgb(0, 0, 0);
+}
+.nav__links{
+    list-style: none;
+}
+.nav__links li{
+    display: inline-block;
+    padding: 0 50px;
+    
+}
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+    font-size: 30px;
+}
+.nav__links li a:hover{
+    color:rgb(219, 122, 231);
+}
+.cta{
+    color:rgb(219, 122, 231);
+}
+.cta:hover{
+    /* transition:  all 0.3 ease 0s; */
+    color:rgba(219, 122, 231,0.8);
+}
+
