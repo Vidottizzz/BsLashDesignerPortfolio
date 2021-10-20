@@ -52,6 +52,7 @@ nav {
 .nav__links{
     list-style: none;
     display: flex;
+    
 }
 .nav__links li{
     letter-spacing: 2px;
@@ -230,6 +231,10 @@ background-color:rgba(202, 22, 101, 0.8);
 }
 
 @media (max-width: 1020px) {
+    body{
+        overflow-x: hidden;
+    }
+
     .nav__links {
         position: absolute;
         top: 8vh;
@@ -240,20 +245,60 @@ background-color:rgba(202, 22, 101, 0.8);
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        
-    }
+        transform: translateX(100%);
+
+        }
+    
+    
+    
+
     nav ul{
         margin-top: 60px;
+       
         
     }
     nav ul li{
         margin: 50px;
-    }
-    .logo{
-        margin: auto;
-        height: 180px;
-        width: 180px;
+        margin-left: 0;
+        opacity: 1;
         
+        
+        
+
+    }
+ 
+  
+    .logo{
+        /* margin: auto; */
+        margin-left: 3%;
+        height: 168px;
+        width: 168px;      
+    }
+    .mobile-menu {
+        display: block;
+        
+    }
+}
+.nav__links.active {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in;
+    animation-name: navLinkFade;
+    animation-duration: 0.6s;
+    
+    /* transition: transform 0.3s ease-in; */
+}
+
+
+
+@keyframes navLinkFade {
+    0% {
+        
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
