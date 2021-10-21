@@ -1,2 +1,1 @@
-# BsLashDesignerPortfolio
-A WebSite project made to expose the job of this professional lash designer and her job
+Um site feito com o propósito de exercício para treinar oque aprendi e divulgar o trabalho da minha esposa. 
